@@ -30,6 +30,7 @@ export interface Tree {
   characteristics: string[];
   imageUrl: string;
   audioUrl?: string;
+  signLanguageVideoUrl?: string;
 }
 
 export interface Question {

@@ -1,6 +1,6 @@
 export const tr = {
   app: {
-    name: "Sessiz Selam: Dendrolojiyle Bakmaktan Görmeye",
+    name: "Sessiz Selam: \nDendrolojiyle Bakmaktan Görmeye",
     tagline: "Ağaçlar hakkında eğlenceli ve etkileşimli öğrenme",
   },
   home: {
