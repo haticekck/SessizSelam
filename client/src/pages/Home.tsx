@@ -31,7 +31,7 @@ export default function Home() {
   }, [isVideoWatched]);
 
   const allTreesRead = readTrees.length === trees.length;
-  const canStartTest = allTreesRead && isVideoWatched;
+  const canStartTest = isVideoWatched;
 
   const handleTreeSelect = (treeId: number) => {
     setLocation(`/tree/${treeId}`);
@@ -49,13 +49,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header completedTrees={readTrees.length} totalTrees={trees.length} />
-      <Hero />
-      
+      <Header completedTrees={readTrees.length} totalTrees={trees.length} />  
       <div className="max-w-md mx-auto px-4 py-6">
-        <h2 className="text-xl font-bold mb-4" data-testid="text-trees-heading">
-          {tr.home.exploreHeading}
-        </h2>
         <VideoPlayer 
           videoUrl={INTRO_VIDEO_URL} 
           onVideoEnd={handleVideoEnd}

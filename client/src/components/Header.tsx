@@ -19,16 +19,12 @@ export function Header({ completedTrees, totalTrees }: HeaderProps) {
               <Leaf className="w-5 h-5 text-primary" data-testid="icon-logo" />
             </div>
             <div>
-              <h1 className="text-lg font-bold leading-tight" data-testid="text-app-name">
+              <h1 className="text-xl font-bold leading-tight whitespace-pre-line" data-testid="text-app-name">
                 {tr.app.name}
               </h1>
-              <p className="text-xs text-muted-foreground leading-tight">
-                {completedTrees}/{totalTrees} {tr.home.completed}
-              </p>
             </div>
           </div>
         </div>
-        <Progress value={progress} className="h-2" data-testid="progress-overall" />
       </div>
     </header>
   );
